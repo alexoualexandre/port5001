@@ -8,8 +8,12 @@ export default function App() {
 
       <nav>
         <ul>
-          <li><Link to="/">Accueil</Link></li>
-          <li><Link to="/teste">Page Teste</Link></li>
+          <li>
+            <Link to="/">Accueil</Link>
+          </li>
+          <li>
+            <Link to="/teste">Page Teste</Link>
+          </li>
         </ul>
       </nav>
 

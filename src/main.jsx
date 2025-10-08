@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Teste from "./Teste.jsx";
+import VoiceRecorder from "./VoiceRecorder.jsx";
 import "./index.css";
 
 // Définition du routeur
@@ -12,8 +13,8 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/teste",
-        element: <Teste />,
+        path: "/recorder",
+        element: <VoiceRecorder />,
       },
     ],
   },

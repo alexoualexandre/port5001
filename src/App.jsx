@@ -12,7 +12,7 @@ export default function App() {
             <Link to="/">Accueil</Link>
           </li>
           <li>
-            <Link to="/teste">Page Teste</Link>
+            <Link to="/recorder">recorder</Link>
           </li>
         </ul>
       </nav>

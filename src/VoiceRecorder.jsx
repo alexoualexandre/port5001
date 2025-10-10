@@ -1,10 +1,12 @@
 import React, { useState, useRef } from "react";
+import { MyContext } from "./Context.jsx";
 
 export default function VoiceRecorder() {
   const [recording, setRecording] = useState(false);
   const [audioURL, setAudioURL] = useState("");
   const mediaRecorderRef = useRef(null);
   const audioChunks = useRef([]);
+  const { txt } = MyContext();
 
   const startRecording = async () => {
     try {
@@ -37,7 +39,7 @@ export default function VoiceRecorder() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "40px" }}>
-      <h2>🎤 Enregistreur vocal</h2>
+      <h2>🎤 { txt }</h2>
       {!recording ? (
         <button onClick={startRecording}>Démarrer l'enregistrement</button>
       ) : (

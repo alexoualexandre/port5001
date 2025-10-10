@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import Teste from "./Teste.jsx";
 import VoiceRecorder from "./VoiceRecorder.jsx";
+import { Provider } from "./Context.jsx";
 import "./index.css";
 
 // Définition du routeur
@@ -23,6 +24,8 @@ const router = createBrowserRouter([
 // Rendu principal
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+   <Provider>
     <RouterProvider router={router} />
+   </Provider>
   </StrictMode>
 );

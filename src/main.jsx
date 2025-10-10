@@ -24,8 +24,8 @@ const router = createBrowserRouter([
 // Rendu principal
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-   <Provider>
-    <RouterProvider router={router} />
-   </Provider>
+    <Provider>
+      <RouterProvider router={router} />
+    </Provider>
   </StrictMode>
 );

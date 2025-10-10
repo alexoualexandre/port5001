@@ -4,7 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 export default function App() {
   return (
     <div>
-      <h1>réfléchis</h1>
+      <h1>fixe</h1>
 
       <nav>
         <ul>
@@ -12,12 +12,10 @@ export default function App() {
             <Link to="/">Accueil</Link>
           </li>
           <li>
-            <Link to="/recorder">recorder</Link>
+            <Link to="/recorder">children</Link>
           </li>
         </ul>
       </nav>
-
-      {/* 👉 Ici s’affichera le contenu des sous-routes */}
       <Outlet />
     </div>
   );

@@ -11,23 +11,26 @@ export default function App() {
       });
   };
   return (
-    <div>
-      <h1>fixe</h1>
+    <>
+      <header>
+        <h1>header</h1>
 
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Accueil</Link>
-          </li>
-          <li>
-            <Link to="/recorder">children</Link>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+          <ul className="ul-nav">
+            <li>
+              <Link to="/">Accueil</Link>
+            </li>
+            <li>
+              <Link to="/recorder">children</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Outlet />
+      </header>
       <button type="button" onClick={request}>
         request
       </button>
-      <Outlet />
-    </div>
+    </>
   );
 }

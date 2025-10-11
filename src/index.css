@@ -24,6 +24,10 @@ header {
   background-color: grey;
 }
 
-h1 {
-  color: var(--txt);
+.composant-1 {
+  text-align: center;
+}
+
+.composant-2 {
+  text-align: center;
 }

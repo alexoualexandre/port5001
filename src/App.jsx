@@ -2,6 +2,8 @@ import React from "react";
 import { Outlet, Link } from "react-router-dom";
 
 export default function App() {
+  const { VITE_API_HTTP } = import.meta.env;
+  console.log(VITE_API_HTTP);
   const reponseServer = "réponse du serveur : port 3000 en écoute !";
   const request = () => {
     fetch(`http://localhost:3000/teste/${reponseServer}`)

@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 
 const Context = createContext();
 
-export function Provider({ children }){
-    const [txt,setTxt] = useState("le texte blabla");
+export function Provider({ children }) {
+  const [elem, setElem] = useState("blabla");
 
   return (
     <Context.Provider
       value={{
-        txt,
-        setTxt,
+        elem,
+        setElem,
       }}
     >
       {children}

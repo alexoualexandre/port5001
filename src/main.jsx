@@ -2,8 +2,8 @@ import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import Teste from "./Teste.jsx";
-import VoiceRecorder from "./VoiceRecorder.jsx";
+import Composant1 from "./composant1.jsx";
+import Composant2 from "./Composant2.jsx";
 import { Provider } from "./Context.jsx";
 import "./index.css";
 
@@ -14,8 +14,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/recorder",
-        element: <VoiceRecorder />,
+        path: "/route1",
+        element: <Composant1 />,
+      },
+      {
+        path: "/route2",
+        element: <Composant2 />,
       },
     ],
   },

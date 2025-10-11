@@ -3,7 +3,6 @@ import { Outlet, Link } from "react-router-dom";
 
 export default function App() {
   const { VITE_API_HTTP, VITE_API_URL, VITE_API_PORT } = import.meta.env;
-  console.log(VITE_API_HTTP);
   const reponseServer = "réponse du serveur : port 3000 en écoute !";
   const request = () => {
     fetch(
@@ -17,7 +16,7 @@ export default function App() {
   return (
     <>
       <header>
-        <h1>header</h1>
+        <h1 style={{ color: "white" }}>header</h1>
 
         <nav>
           <ul className="ul-nav">
@@ -25,7 +24,10 @@ export default function App() {
               <Link to="/">Accueil</Link>
             </li>
             <li>
-              <Link to="/recorder">children</Link>
+              <Link to="/route1">route1</Link>
+            </li>
+            <li>
+              <Link to="/route2">route2</Link>
             </li>
           </ul>
         </nav>

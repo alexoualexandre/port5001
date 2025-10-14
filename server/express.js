@@ -8,6 +8,8 @@ const cors = require("cors");
 
 const app = express();
 
+const { getUser } = require("./controler/userControler.js");
+
 app.use(express.json());
 
 const corsOptions = {
@@ -31,3 +33,5 @@ app.get("/teste/:reponseServer", (req, res) => {
   const { reponseServer } = req.params;
   res.json({ reponse: reponseServer });
 });
+
+app.get("/get-user", getUser);

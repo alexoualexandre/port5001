@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function App() {
   const { VITE_API_HTTP, VITE_API_URL, VITE_API_PORT } = import.meta.env;
@@ -13,6 +14,13 @@ export default function App() {
         console.log(resp.reponse);
       });
   };
+  useEffect(() => {
+    fetch(`${VITE_API_HTTP}://${VITE_API_URL}:${VITE_API_PORT}/get-user`)
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response);
+      });
+  }, []);
   return (
     <>
       <header>

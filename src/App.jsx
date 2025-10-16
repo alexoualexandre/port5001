@@ -29,13 +29,16 @@ export default function App() {
         <nav>
           <ul className="ul-nav">
             <li>
-              <Link to="/">Accueil</Link>
+              <Link to="/" className="link">Accueil</Link>
             </li>
             <li>
-              <Link to="/route1">route1</Link>
+              <Link to="/route1" className="link">route1</Link>
             </li>
             <li>
-              <Link to="/route2">route2</Link>
+              <Link to="/route2" className="link">route2</Link>
+            </li>
+	    <li>
+	      <Link to="/form" className="link">formulaire</Link>
             </li>
           </ul>
         </nav>

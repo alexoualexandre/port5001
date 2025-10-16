@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import Composant1 from "./composant1.jsx";
 import Composant2 from "./Composant2.jsx";
 import { Provider } from "./Context.jsx";
+import Formulaire from "./Formulaire.jsx";
 import "./index.css";
 
 // Définition du routeur
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/route2",
         element: <Composant2 />,
+      },
+      {
+        path: "/form",
+        element: <Formulaire />,
       },
     ],
   },

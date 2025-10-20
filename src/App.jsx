@@ -24,7 +24,7 @@ export default function App() {
   return (
     <>
       <header>
-        <h1 style={{ color: "white" }}>head</h1>
+        <h1 style={{ color: "white" }}>header</h1>
 
         <nav>
           <ul className="ul-nav">
